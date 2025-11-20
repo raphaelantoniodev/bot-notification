@@ -37,7 +37,7 @@ Ideal para monitorar produtos, serviços ou qualquer evento que exija alerta ime
 
 ## Instalação
 ```cmd
-git clone https://github.com/SEU_USUARIO/seu-bot-whatsapp.git
+git clone https://github.com/raphaelantoniodev/bot-notification
 cd seu-bot-whatsapp
 ```
 
@@ -60,4 +60,5 @@ cd seu-bot-whatsapp
 
 - O WhatsApp pode encerrar sessões inativas com frequência; por isso o sistema valida a cada 5 horas.
 - Não utilize para spam. Apenas para notificações autorizadas.
+
 - Bots automatizados podem violar os termos do WhatsApp; use por sua conta e risco.
