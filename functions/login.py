@@ -41,8 +41,9 @@ def login(driver: webdriver.Chrome):
                 print(f'[LOGS]: Login successfully - {datetime.now().strftime("%d/%m as %H:%M")}')
                 print('[LOGS]: Starting data collection system for automatic notification sending.')
 
-                get_status_product(driver=driver, number='5516998592059')
+                get_status_product(driver=driver, number='')
                 return
 
             except:
                 continue
+
