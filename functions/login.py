@@ -2,10 +2,13 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 from functions.notification import get_status_product
+from dotenv import load_dotenv
 from selenium import webdriver
 from datetime import datetime
 from time import sleep
 import os
+
+load_dotenv()
 
 def login(driver: webdriver.Chrome):
     driver.get('https://web.whatsapp.com/')
@@ -41,9 +44,10 @@ def login(driver: webdriver.Chrome):
                 print(f'[LOGS]: Login successfully - {datetime.now().strftime("%d/%m as %H:%M")}')
                 print('[LOGS]: Starting data collection system for automatic notification sending.')
 
-                get_status_product(driver=driver, number='')
+                get_status_product(driver=driver, number=os.getenv("NUMBER"))
                 return
 
             except:
                 continue
+
 
